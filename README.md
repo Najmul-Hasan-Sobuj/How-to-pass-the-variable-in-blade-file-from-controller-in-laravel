@@ -7,7 +7,7 @@ The easiest way is to use the PHP `compact` function. In your controller functio
 ```
 public function index()
 {
-    $name = 'John Doe';
+    $name = 'Najmul Hasan';
     return view('welcome', compact('name'));
 }
 ```
@@ -21,7 +21,7 @@ Another way to pass a variable is to use the `with` method on the view. Here's h
 ```
 public function index()
 {
-    $name = 'John Doe';
+    $name = 'Najmul Hasan';
     return view('welcome')->with('name', $name);
 }
 ```
@@ -35,7 +35,7 @@ You can also pass multiple variables using an array. Here's an example:
 ```
 public function index()
 {
-    $data['name'] = 'John Doe';
+    $data['name'] = 'Najmul Hasan';
     $data['age'] = 30;
     return view('welcome', $data);
 }
