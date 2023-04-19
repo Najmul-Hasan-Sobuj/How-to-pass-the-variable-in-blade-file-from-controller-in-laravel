@@ -4,7 +4,7 @@
 
 The easiest way is to use the PHP `compact` function. In your controller function, define the variable and pass it to the view using `compact`. Here's an example:
 
-```
+```php
 public function index()
 {
     $name = 'Najmul Hasan';
@@ -18,7 +18,7 @@ In this example, we're passing `$name` variable to the `welcome.blade.php` file.
 
 Another way to pass a variable is to use the `with` method on the view. Here's how:
 
-```
+```php
 public function index()
 {
     $name = 'Najmul Hasan';
@@ -32,7 +32,7 @@ In this approach, we are returning the view `welcome`, and using the `with` meth
 
 You can also pass multiple variables using an array. Here's an example:
 
-```
+```php
 public function index()
 {
     $data['name'] = 'Najmul Hasan';
