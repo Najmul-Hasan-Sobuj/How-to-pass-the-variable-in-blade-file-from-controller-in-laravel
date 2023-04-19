@@ -1,6 +1,6 @@
 ## How to pass the variable in blade file from controller in laravel
 
-**1. Using compact function:**
+**1. Using `compact` method:**
 
 The easiest way is to use the PHP `compact` function. In your controller function, define the variable and pass it to the view using `compact`. Here's an example:
 
@@ -14,7 +14,7 @@ public function index()
 
 In this example, we're passing `$name` variable to the `welcome.blade.php` file.
 
-**2. Using With Method:**
+**2. Using `with` method:**
 
 Another way to pass a variable is to use the `with` method on the view. Here's how:
 
@@ -28,7 +28,7 @@ public function index()
 
 In this approach, we are returning the view `welcome`, and using the `with` method along with the `$name ` variable to pass it into the view.
 
-**3. Using Array:**
+**3. Using `array`:**
 
 You can also pass multiple variables using an array. Here's an example:
 
