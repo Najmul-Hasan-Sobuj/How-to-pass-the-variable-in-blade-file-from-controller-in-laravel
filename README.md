@@ -1,0 +1,1 @@
+# How-to-pass-the-variable-in-blade-file-from-controller-in-laravel
